@@ -162,6 +162,10 @@ h3 { font-size: 1.15rem; font-weight: 700; line-height: 1.35; }
     background: var(--card); border: 1px solid var(--borda);
 }
 .tag i { color: var(--azul); }
+.ico {
+    width: 15px; height: 15px; flex: none; background: var(--azul);
+    -webkit-mask: var(--i) center / contain no-repeat; mask: var(--i) center / contain no-repeat;
+}
 
 /* Projetos */
 .projeto-destaque { display: grid; grid-template-columns: 0.9fr 1.1fr; overflow: hidden; }
