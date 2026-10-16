@@ -3,131 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfolio DevOps</title>
+    <title>Rafael Biasotto · Cloud, FinOps e IaC</title>
+    <meta name="description" content="Portfólio de Rafael Biasotto: Cloud multicloud, FinOps, governança e infraestrutura como código com Terraform.">
+    <meta property="og:title" content="Rafael Biasotto · Cloud, FinOps e IaC">
+    <meta property="og:description" content="Cloud multicloud, FinOps, governança e infraestrutura como código com Terraform.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#07111F">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230B1B2E'/><text x='32' y='42' text-anchor='middle' font-family='monospace' font-size='28' font-weight='700' fill='%23FF8A3D'>rb</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h2>💻 DevOps Portfolio</h2>
-            </div>
+    <header class="topo">
+        <nav class="container nav">
+            <a href="#home" class="logo"><span class="logo-tag">rb</span> Rafael Biasotto</a>
+            <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#atuacao">Atuação</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#certificacoes">Certificações</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#contato" class="nav-cta">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Hero -->
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Olá! 👋 Eu sou <span>Rafael</span></h1>
-                <p>Especialista em DevOps e Automação</p>
-                <div class="cta-buttons">
-                    <a href="#projetos" class="btn primary">Ver Projetos</a>
-                    <a href="#contato" class="btn secondary">Entrar em Contato</a>
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow">&gt; cloud engineer · multicloud</p>
+                    <h1>Olá, pessoas 👋<br>Eu sou o <span class="destaque">Rafael</span>.</h1>
+                    <p class="digitando" aria-live="polite"><span id="frase">Nuvem governada, automatizada e eficiente.</span><span class="cursor">▌</span></p>
+                    <p class="hero-sub">Atuo na interseção entre <strong>infraestrutura, automação e custos</strong> em ambientes Azure, AWS, GCP e OCI. Hoje estou aprofundando em <strong>IaC com Terraform</strong> e GitHub Actions.</p>
+                    <div class="cta">
+                        <a href="#projetos" class="btn btn-primario">Ver projetos <i class="fas fa-arrow-down"></i></a>
+                        <a href="https://www.linkedin.com/in/rafaelbbiasotto/" target="_blank" rel="noopener" class="btn btn-sec"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/rafabiasotto" target="_blank" rel="noopener" class="btn btn-sec"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="terminal" aria-hidden="true">
+                    <div class="terminal-barra"><i></i><i></i><i></i><span>rafael.tf</span></div>
+<pre><span class="c-com"># quem sou, em HCL</span>
+<span class="c-kw">module</span> <span class="c-str">"rafael"</span> {
+  role     = <span class="c-str">"Cloud &amp; FinOps"</span>
+  clouds   = [<span class="c-str">"azure"</span>, <span class="c-str">"aws"</span>, <span class="c-str">"gcp"</span>, <span class="c-str">"oci"</span>]
+  iac      = <span class="c-str">"terraform"</span>
+  ci_cd    = [<span class="c-str">"github-actions"</span>, <span class="c-str">"argo-cd"</span>]
+  focus    = <span class="c-str">"custo sob controle"</span>
+  learning = <span class="c-kw">true</span>
+}
+
+<span class="c-prompt">$</span> terraform apply
+<span class="c-ok">Apply complete!</span> Resources: <span class="c-num">9</span> certs, <span class="c-num">300+</span> subs.</pre>
+                </div>
+            </div>
+            <div class="container"><div class="numeros">
+                <div><strong>8+</strong><span>anos em TI</span></div>
+                <div><strong>3</strong><span>anos em cloud multicloud</span></div>
+                <div><strong>300+</strong><span>subscriptions reorganizadas</span></div>
+                <div><strong>9</strong><span>certificações</span></div>
+            </div></div>
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre" class="secao">
+            <div class="container sobre">
+                <div>
+                    <p class="rotulo">01 · sobre</p>
+                    <h2>Sobre mim</h2>
+                </div>
+                <div class="sobre-texto">
+                    <p>Profissional de <strong>Cloud</strong> com mais de 8 anos em TI, 3 deles dedicados a ambientes <strong>multicloud</strong>. Meu trabalho é deixar a nuvem <strong>governada, automatizada e financeiramente eficiente</strong>: menos desperdício, mais rastreabilidade e processos que rodam sozinhos.</p>
+                    <p>Comecei no suporte técnico, passei para a sustentação de ambientes cloud e hoje combino FinOps, governança e DevOps no dia a dia. A ferramenta de gestão de custos que desenvolvi foi <strong>vencedora do campeonato interno de tecnologia</strong> da empresa. 🏆</p>
                 </div>
             </div>
         </section>
 
-        <section id="sobre" class="about">
+        <!-- Atuação -->
+        <section id="atuacao" class="secao secao-alt">
             <div class="container">
-                <h2>🚀 Sobre Mim</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Sou apaixonado por automação, infraestrutura como código e cultura DevOps. 
-                           Trabalho com ferramentas modernas para criar soluções eficientes e escaláveis.</p>
-                        
-                        <div class="skills">
-                            <h3>🛠️ Tecnologias</h3>
-                            <div class="skill-tags">
-                                <span class="skill">Git & GitHub</span>
-                                <span class="skill">Docker</span>
-                                <span class="skill">Terraform</span>
-                                <span class="skill">GitHub Actions</span>
-                                <span class="skill">Linux</span>
-                                <span class="skill">AWS</span>
-                                <span class="skill">Python</span>
-                                <span class="skill">Azure</span>
-                            </div>
-                        </div>
+                <p class="rotulo">02 · atuação</p>
+                <h2>No que eu trabalho</h2>
+                <div class="grid-4">
+                    <article class="card area">
+                        <div class="area-icone"><i class="fas fa-coins"></i></div>
+                        <h3>FinOps</h3>
+                        <p>Análise de custos, rightsizing, reservas e caça a desperdícios, com automações que cruzam consumo e custo para medir o saving real.</p>
+                    </article>
+                    <article class="card area">
+                        <div class="area-icone"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Governança e compliance</h3>
+                        <p>TAGs obrigatórias para showback, Azure Policy para manter o ambiente em conformidade, RBAC e hierarquia de Management Groups.</p>
+                    </article>
+                    <article class="card area">
+                        <div class="area-icone"><i class="fas fa-gears"></i></div>
+                        <h3>DevOps e DevSecOps</h3>
+                        <p>Pipelines CI/CD com SonarQube e Gitleaks, automação com GitHub Actions, Argo CD e AKS.</p>
+                    </article>
+                    <article class="card area">
+                        <div class="area-icone"><i class="fas fa-code-branch"></i></div>
+                        <h3>Infraestrutura como código</h3>
+                        <p>Terraform com módulos reutilizáveis, Git e GitHub no fluxo de trabalho e deploy com OIDC, sem segredo guardado no pipeline.</p>
+                    </article>
+                </div>
+
+                <div class="stack">
+                    <div class="stack-grupo">
+                        <h4>Cloud</h4>
+                        <span class="tag"><i class="fab fa-microsoft"></i> Azure</span>
+                        <span class="tag"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="tag"><i class="fab fa-google"></i> GCP</span>
+                        <span class="tag"><i class="fas fa-database"></i> OCI</span>
+                    </div>
+                    <div class="stack-grupo">
+                        <h4>IaC, DevOps e DevSecOps</h4>
+                        <span class="tag">Terraform</span>
+                        <span class="tag"><i class="fab fa-github"></i> GitHub Actions</span>
+                        <span class="tag">Azure DevOps</span>
+                        <span class="tag">Argo CD</span>
+                        <span class="tag">AKS</span>
+                        <span class="tag">SonarQube</span>
+                        <span class="tag">Gitleaks</span>
+                    </div>
+                    <div class="stack-grupo">
+                        <h4>FinOps, governança e automação</h4>
+                        <span class="tag">Azure Policy</span>
+                        <span class="tag">RBAC</span>
+                        <span class="tag">TAGs e showback</span>
+                        <span class="tag">Rightsizing e reservas</span>
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">Azure CLI</span>
+                        <span class="tag"><i class="fab fa-python"></i> Python</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projetos" class="projects">
+        <!-- Projetos -->
+        <section id="projetos" class="secao">
             <div class="container">
-                <h2>📂 Projetos em Destaque</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>🏗️ Infraestrutura AWS com Terraform</h3>
-                        <p>Automação completa de infraestrutura no Azure usando Terraform e GitHub Actions.</p>
-                        <div class="project-tech">
-                            <span>Terraform</span>
-                            <span>AWS</span>
-                            <span>GitHub Actions</span>
-                        </div>
-                        <a href="#" class="project-link">Ver no GitHub <i class="fab fa-github"></i></a>
-                    </div>
+                <p class="rotulo">03 · projetos</p>
+                <h2>Projetos</h2>
 
-                    <div class="project-card">
-                        <h3>🐳 Pipeline CI/CD com Docker</h3>
-                        <p>Pipeline completo de integração e deploy usando containers Docker.</p>
-                        <div class="project-tech">
-                            <span>Docker</span>
-                            <span>CI/CD</span>
-                            <span>Node.js</span>
+                <article class="card projeto-destaque">
+                    <button class="projeto-img" data-zoom="assets/copa-arquitetura.jpg" aria-label="Ampliar arquitetura do Copa Azure 2026">
+                        <img src="assets/copa-arquitetura.jpg" alt="Arquitetura da plataforma Copa Azure 2026 em duas regiões" loading="lazy">
+                        <span class="zoom"><i class="fas fa-up-right-and-down-left-from-center"></i> Ampliar</span>
+                    </button>
+                    <div class="projeto-corpo">
+                        <span class="selo"><i class="fas fa-star"></i> Destaque</span>
+                        <h3>Copa Azure 2026 · venda de ingressos</h3>
+                        <p>Plataforma de venda de ingressos provisionada inteira com <strong>Terraform</strong> no Azure, distribuída em <strong>duas regiões</strong>. Validada de ponta a ponta: acesso HTTPS, cadastro de usuário e compra de ingresso.</p>
+                        <ul class="lista-check">
+                            <li>Três camadas em VMs Windows: frontend no IIS, API Node.js com iisnode e SQL Server 2022 restaurado via BACPAC</li>
+                            <li>VNets com peering entre regiões, NSGs e Azure DNS</li>
+                            <li>Certificado <strong>Let's Encrypt</strong> emitido pelo desafio DNS-01 e guardado no <strong>Key Vault</strong></li>
+                            <li>Código organizado em módulos: network, VM, DNS e certificado</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Terraform</span><span>Azure</span><span>Key Vault</span><span>Azure DNS</span><span>ACME</span><span>PowerShell</span>
                         </div>
-                        <a href="#" class="project-link">Ver no GitHub <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/rafabiasotto/Copa_Azure" target="_blank" rel="noopener" class="link-proj">Ver no GitHub <i class="fas fa-arrow-right"></i></a>
                     </div>
+                </article>
 
-                    <div class="project-card">
-                        <h3>⚙️ Monitoramento com Prometheus</h3>
-                        <p>Stack de observabilidade com Prometheus, Grafana e AlertManager.</p>
-                        <div class="project-tech">
-                            <span>Prometheus</span>
-                            <span>Grafana</span>
-                            <span>Docker Compose</span>
-                        </div>
-                        <a href="#" class="project-link">Ver no GitHub <i class="fab fa-github"></i></a>
-                    </div>
+                <div class="grid-3">
+                    <article class="card projeto">
+                        <div class="projeto-topo"><i class="fas fa-tags"></i><span class="tipo">Governança</span></div>
+                        <h3>Azure Governance Automation</h3>
+                        <p>Script em PowerShell e Azure CLI que lê uma planilha CSV e aplica TAGs em Resource Groups, cria Policy Assignments de herança de TAGs e executa as remediações, em várias assinaturas de uma vez.</p>
+                        <div class="tags"><span>PowerShell</span><span>Azure CLI</span><span>Azure Policy</span></div>
+                        <a href="https://github.com/rafabiasotto/Aplica-Tags-Complete" target="_blank" rel="noopener" class="link-proj">Ver no GitHub <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="card projeto">
+                        <div class="projeto-topo"><i class="fas fa-chart-line"></i><span class="tipo">FinOps</span></div>
+                        <h3>Dash de recomendações FinOps</h3>
+                        <p>Painel que acompanha recomendações de otimização do início ao fim e calcula o <strong>saving efetivo</strong> com base no custo real diário, antes e depois de cada ação. Deploy contínuo com GitHub Actions.</p>
+                        <div class="tags"><span>Python</span><span>FastAPI</span><span>Azure SQL</span><span>App Service</span></div>
+                        <span class="link-proj privado"><i class="fas fa-lock"></i> Repositório privado</span>
+                    </article>
+
+                    <article class="card projeto">
+                        <div class="projeto-topo"><i class="fas fa-rocket"></i><span class="tipo">Web</span></div>
+                        <h3>Este portfólio</h3>
+                        <p>Site estático em HTML, CSS e JavaScript, sem framework, publicado com GitHub Pages a cada push na branch principal.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+                        <a href="https://github.com/rafabiasotto/meu-portfolio-devops" target="_blank" rel="noopener" class="link-proj">Ver no GitHub <i class="fas fa-arrow-right"></i></a>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="contact">
+        <!-- Certificações -->
+        <section id="certificacoes" class="secao secao-alt">
             <div class="container">
-                <h2>📫 Vamos Conversar?</h2>
-                <div class="contact-content">
-                    <p>Interessado em colaborar ou discutir sobre DevOps? Entre em contato!</p>
-                    <div class="contact-links">
-                        <a href="mailto:seu-email@exemplo.com" class="contact-link">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
-                        <a href="https://linkedin.com/in/rafaelbbiasotto" class="contact-link">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/rafabiasotto" class="contact-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
+                <p class="rotulo">04 · certificações</p>
+                <h2>Certificações</h2>
+                <div class="certs">
+                    <figure class="cert"><img src="assets/certs/terraform-004.png" alt="HashiCorp Terraform Associate 004" loading="lazy"><figcaption><strong>Terraform Associate (004)</strong><span>HashiCorp</span></figcaption></figure>
+                    <figure class="cert"><img src="assets/certs/az-305.png" alt="Azure Solutions Architect Expert" loading="lazy"><figcaption><strong>Azure Solutions Architect Expert</strong><span>Microsoft · AZ-305</span></figcaption></figure>
+                    <figure class="cert"><img src="assets/certs/az-104.png" alt="Azure Administrator Associate" loading="lazy"><figcaption><strong>Azure Administrator Associate</strong><span>Microsoft · AZ-104</span></figcaption></figure>
+                    <figure class="cert"><img src="assets/certs/az-900.png" alt="Azure Fundamentals" loading="lazy"><figcaption><strong>Azure Fundamentals</strong><span>Microsoft · AZ-900</span></figcaption></figure>
+                    <figure class="cert"><img src="assets/certs/sc-900.png" alt="Security, Compliance and Identity Fundamentals" loading="lazy"><figcaption><strong>Security, Compliance and Identity Fundamentals</strong><span>Microsoft · SC-900</span></figcaption></figure>
+                    <figure class="cert"><img src="assets/certs/aws-ccp.png" alt="AWS Certified Cloud Practitioner" loading="lazy"><figcaption><strong>Cloud Practitioner</strong><span>AWS</span></figcaption></figure>
+                    <figure class="cert"><img src="assets/certs/finops-practitioner.png" alt="FinOps Certified Practitioner" loading="lazy"><figcaption><strong>FinOps Certified Practitioner</strong><span>FinOps Foundation</span></figcaption></figure>
+                    <figure class="cert"><img src="assets/certs/finops-engineer.png" alt="FinOps Certified Engineer" loading="lazy"><figcaption><strong>FinOps Certified Engineer</strong><span>FinOps Foundation</span></figcaption></figure>
+                    <figure class="cert"><img src="assets/certs/oci-foundations.png" alt="Oracle Cloud Infrastructure Foundations Associate" loading="lazy"><figcaption><strong>OCI Foundations Associate</strong><span>Oracle</span></figcaption></figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiência -->
+        <section id="experiencia" class="secao">
+            <div class="container">
+                <p class="rotulo">05 · experiência</p>
+                <h2>Experiência</h2>
+                <ol class="timeline">
+                    <li>
+                        <span class="periodo">3 anos</span>
+                        <h3>Cloud &amp; FinOps · ambientes multicloud</h3>
+                        <ul>
+                            <li>Sustentação de ambientes Azure, AWS, GCP e OCI, apoiando FinOps e DevOps com foco em estabilidade e eficiência.</li>
+                            <li>Reestruturação de <strong>mais de 300 subscriptions</strong> no Azure, com nova hierarquia de Management Groups e boas práticas de governança.</li>
+                            <li>Comitês de custo com estratégias de rightsizing, reservas e otimização de recursos.</li>
+                            <li>Pipelines CI/CD com SonarQube e Gitleaks em projetos DevSecOps; automações com GitHub Actions, Argo CD e AKS.</li>
+                            <li>🏆 Ferramenta de gestão de custos <strong>vencedora do campeonato interno de tecnologia</strong>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="periodo">5 anos</span>
+                        <h3>Suporte técnico</h3>
+                        <ul>
+                            <li>Base em infraestrutura, atendimento e resolução de problemas que hoje sustenta o trabalho em cloud.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="secao secao-alt">
+            <div class="container contato">
+                <p class="rotulo">06 · contato</p>
+                <h2>Vamos conversar?</h2>
+                <p>Quer trocar ideia sobre custos em cloud, governança ou IaC? Me chama no LinkedIn.</p>
+                <div class="cta cta-centro">
+                    <a href="https://www.linkedin.com/in/rafaelbbiasotto/" target="_blank" rel="noopener" class="btn btn-primario"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/rafabiasotto" target="_blank" rel="noopener" class="btn btn-sec"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Meu Portfolio DevOps. Deploy automático via GitHub Actions 🚀</p>
-            <p>Última atualização: <span id="last-update"><!--TIMESTAMP--></span></p>
+    <footer class="rodape">
+        <div class="container rodape-linha">
+            <span>© <span id="ano">2026</span> Rafael Biasotto</span>
+            <span>Publicado com GitHub Pages<span id="atualizado"></span></span>
         </div>
     </footer>
 
-    <script src="assets/script.js"></script>
+    <div class="lightbox" hidden><button class="lightbox-fechar" aria-label="Fechar"><i class="fas fa-xmark"></i></button><img alt=""></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
